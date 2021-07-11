@@ -1,3 +1,3 @@
 # Welcome to GitHub
 
-Tharik Kanaka
+Tharik
