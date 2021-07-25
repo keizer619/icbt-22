@@ -1,5 +1,5 @@
 class Square {
-    private void main(String[] args) {
+    public static void main(String[] args) {
         int x = 0, y = 0;
 
         while(x < 4) {
