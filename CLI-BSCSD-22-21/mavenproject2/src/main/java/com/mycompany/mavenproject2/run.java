@@ -11,7 +11,10 @@ package com.mycompany.mavenproject2;
  */
 public class run {
     public static void main(String[] args) {
-        System.out.println("Hello ICBT 22");
+ 
+          for (int i = 0; i < 4; i++) {
+            System.out.println("* * * *");
+           }
     }
     
     
