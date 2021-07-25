@@ -10,19 +10,13 @@
  */
 public class HelloWorld 
 {
-    public static void main(String[] args)
-    {
-        System.out.println("Hellow World!!!");
-        {
-          int limit = 4;
-            for ( int x = 0; x < limit; x++  )
-            {
-              for ( int y = 0; y < limit; y++ )
-                {
+    public static void main(String[] args){
+        int limit = 4;
+            for ( int x = 0; x < limit; x++  ){
+                for ( int y = 0; y < limit; y++ ){
                     System.out.print("* ");
                 }
-               System.out.println();
-            }
-        }   
-    }          
-}
+            System.out.println();
+        }
+    }   
+ }
