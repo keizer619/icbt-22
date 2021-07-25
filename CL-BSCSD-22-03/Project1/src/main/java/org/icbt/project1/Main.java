@@ -12,7 +12,13 @@ package org.icbt.project1;
 public class Main {
     
     public static void main(String[] args) {
-        System.out.println("Hello World");
+        int size = 4;
+        for (int i = 0; i < size; i++) {
+            for (int j = 0; j < size; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
     }
     
     
