@@ -12,5 +12,9 @@ package com.mycompany.mavenproject1;
 public class NewClass {
     public static void main(String[] args){
         System.out.println("hello World");
+        
+        for(int i=0; i<4; i++ ){
+            System.out.println("****");
+        }
     }
 }
