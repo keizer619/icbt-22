@@ -1,0 +1,575 @@
+[33mcommit e071b094d51dbe7fc123d6d8fea50f012abec13f[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31mupstream/master[m[33m)[m
+Merge: c983dbf a82a7f9
+Author: Tharik Kanaka <tharik.kanaka@gmail.com>
+Date:   Sun Jul 11 12:19:29 2021 +0530
+
+    Merge pull request #35 from bilaalgit/master
+    
+    Add my name
+
+[33mcommit c983dbf6cbef841f2bfcececfae0289f5695e1f1[m
+Merge: 580e85d aa2e8e1
+Author: Tharik Kanaka <tharik.kanaka@gmail.com>
+Date:   Sun Jul 11 12:18:13 2021 +0530
+
+    Merge pull request #31 from Nusra9909/master
+    
+    Include name
+
+[33mcommit a82a7f9e7a0ab75d5d25e8f44b2a9db35d2feeb7[m
+Merge: edf8d4e 580e85d
+Author: CL-BSCSD-22-15 <bilaal9191@gmail.com>
+Date:   Sun Jul 11 11:46:23 2021 +0530
+
+    Merge branch 'master' of https://github.com/keizer619/icbt-22
+
+[33mcommit edf8d4e3eb4e41a00837e25415cc7a429a0598ef[m
+Author: CL-BSCSD-22-15 <bilaal9191@gmail.com>
+Date:   Sun Jul 11 11:38:23 2021 +0530
+
+    Add name
+
+[33mcommit 580e85d7be8023166a855d5d3aa07f8d3c585948[m
+Merge: e39292e f19868c
+Author: Tharik Kanaka <tharik.kanaka@gmail.com>
+Date:   Sun Jul 11 11:37:47 2021 +0530
+
+    Merge pull request #32 from arjunadave1218/master
+    
+    Include my name Arjuna
+
+[33mcommit e39292ed52e86ad2c6031e7ecbd78436d3e9d15d[m
+Merge: 9d696de e2e90f2
+Author: Tharik Kanaka <tharik.kanaka@gmail.com>
+Date:   Sun Jul 11 11:37:28 2021 +0530
+
+    Merge pull request #33 from Z1Y4TH/master
+    
+    included README file
+
+[33mcommit 9d696de75f6f486de7481255a28c172a0f7186ec[m
+Merge: 724899f 0270370
+Author: Tharik Kanaka <tharik.kanaka@gmail.com>
+Date:   Sun Jul 11 11:37:13 2021 +0530
+
+    Merge pull request #34 from banushank/master
+    
+    new req
+
+[33mcommit 724899f5af7edfab32599d0442a0dbede661ae43[m
+Merge: 232c83e f059dd2
+Author: Tharik Kanaka <tharik.kanaka@gmail.com>
+Date:   Sun Jul 11 11:31:24 2021 +0530
+
+    Merge pull request #17 from KaviduAloka/master
+    
+    Init commit
+
+[33mcommit f059dd2ffbc25a4d17f5abe8cc4af333a37bc80a[m
+Merge: 923b6de 232c83e
+Author: Kavidu Aloka Kodikara <kavidualoka@Kavidu-Alokas-MacBook-Pro.local>
+Date:   Sun Jul 11 11:25:15 2021 +0530
+
+    Fix folder structure issue
+
+[33mcommit 232c83e7d5b22104a95a206b119c937e7e3c2c4b[m
+Merge: 597c4a8 8ccf525
+Author: Tharik Kanaka <tharik.kanaka@gmail.com>
+Date:   Sun Jul 11 11:22:04 2021 +0530
+
+    Merge pull request #14 from AmilaOS/master
+    
+    CL-BSCSD-22-13 - pull request
+
+[33mcommit 597c4a8869952e364dd05149b1778664d35cc093[m
+Merge: bf1ca0a b455715
+Author: Tharik Kanaka <tharik.kanaka@gmail.com>
+Date:   Sun Jul 11 11:13:50 2021 +0530
+
+    Merge pull request #30 from Weranjana/master
+    
+    Pull request - 22/14
+
+[33mcommit b455715caf1dbbcf3fb4be9d25456dc0256034ff[m
+Author: Weranjana <86902840+Weranjana@users.noreply.github.com>
+Date:   Sun Jul 11 11:07:28 2021 +0530
+
+    Revert "Delete README.md"
+    
+    This reverts commit 2bffc4eeedb38e84014d56bca3d6b4def97f748d.
+
+[33mcommit 2bffc4eeedb38e84014d56bca3d6b4def97f748d[m
+Author: Weranjana <86902840+Weranjana@users.noreply.github.com>
+Date:   Sun Jul 11 11:06:35 2021 +0530
+
+    Delete README.md
+
+[33mcommit 5bc4a41fd360701044e60f7ce4814bb8220a7eb5[m
+Author: Weranjana <86902840+Weranjana@users.noreply.github.com>
+Date:   Sun Jul 11 11:03:47 2021 +0530
+
+    Create README.md
+
+[33mcommit aa2e8e134c4e9cdb7838159851e661aa455d3ead[m
+Merge: 7a924d7 bf1ca0a
+Author: Nusra9909 <86902904+Nusra9909@users.noreply.github.com>
+Date:   Sun Jul 11 11:00:17 2021 +0530
+
+    Merge https://github.com/keizer619/icbt-22
+
+[33mcommit 923b6de3ac4aab86e0d1ec3f691f9641c50a5dcb[m
+Author: Kavidu Aloka Kodikara <kavidualoka@Kavidu-Alokas-MacBook-Pro.local>
+Date:   Sun Jul 11 10:59:38 2021 +0530
+
+    Folder issue fixed
+
+[33mcommit bf1ca0a7e407e55abafd8377ec457dc6b3ccb60f[m
+Merge: b401867 e2aaa2f
+Author: Tharik Kanaka <tharik.kanaka@gmail.com>
+Date:   Sun Jul 11 10:57:21 2021 +0530
+
+    Merge pull request #18 from ibrahimtheboss/master
+    
+    hi iam ibrahim
+
+[33mcommit b401867829b397ebe012f5a24c4d8b42f6179292[m
+Merge: d4be22f 42021c0
+Author: Tharik Kanaka <tharik.kanaka@gmail.com>
+Date:   Sun Jul 11 10:57:07 2021 +0530
+
+    Merge pull request #25 from Kavi819/master
+    
+    Include readme file
+
+[33mcommit d4be22ffade98049b240e0fe71292c669a04d742[m
+Merge: 521cd67 4baab2e
+Author: Tharik Kanaka <tharik.kanaka@gmail.com>
+Date:   Sun Jul 11 10:56:53 2021 +0530
+
+    Merge pull request #28 from rasindu98/master
+    
+    Add comment for README.txt
+
+[33mcommit 521cd6759403abd484d612badeb41b8f7d264d45[m
+Merge: 9d22c6e 4c4d926
+Author: Tharik Kanaka <tharik.kanaka@gmail.com>
+Date:   Sun Jul 11 10:56:20 2021 +0530
+
+    Merge pull request #12 from ijazsajjad2/master
+    
+    Ijaz Sajjad
+
+[33mcommit 9d22c6ed6e9fbac36e7c9d21e3c0bddf2b996b0c[m
+Merge: 8deca78 42f4f31
+Author: Tharik Kanaka <tharik.kanaka@gmail.com>
+Date:   Sun Jul 11 10:55:13 2021 +0530
+
+    Merge pull request #22 from ChandaleeW/master
+    
+    Include read me
+
+[33mcommit 7a924d7d2227d971981e0f45f05e15cfa7ce1646[m
+Author: Nusra9909 <86902904+Nusra9909@users.noreply.github.com>
+Date:   Sun Jul 11 10:43:15 2021 +0530
+
+    Edit
+
+[33mcommit 8deca7806bb14f3da40eaa3a2382270e59c44dd6[m
+Merge: 6480534 599f7d9
+Author: Tharik Kanaka <tharik.kanaka@gmail.com>
+Date:   Sun Jul 11 10:42:04 2021 +0530
+
+    Merge branch 'master' of https://github.com/keizer619/icbt-22
+
+[33mcommit 599f7d97dc0931df21f4c9f38d76031a987e0775[m
+Author: Tharik Kanaka <tharik.kanaka@gmail.com>
+Date:   Sun Jul 11 10:39:21 2021 +0530
+
+    Modify name
+
+[33mcommit 6480534036ced079dc3d085073144ddd3a6761d3[m
+Author: Tharik Kanaka <tharik.kanaka@gmail.com>
+Date:   Sun Jul 11 10:39:11 2021 +0530
+
+    Change name
+
+[33mcommit e8485686ed5e7d1b943584c405c7bd9388bfa460[m
+Merge: 17cb786 7552957
+Author: Tharik Kanaka <tharik.kanaka@gmail.com>
+Date:   Sun Jul 11 10:31:13 2021 +0530
+
+    Merge pull request #29 from keizer619/change1
+    
+    Remove last name
+
+[33mcommit 75529575085484fbc1fbbbd57cee2706223dc5b2[m
+Merge: 742dc5f 17cb786
+Author: Tharik Kanaka <tharik.kanaka@gmail.com>
+Date:   Sun Jul 11 10:30:54 2021 +0530
+
+    Merge branch 'master' into change1
+
+[33mcommit 742dc5f303a764a18f176f4a2938da911ef1f2b8[m
+Author: Tharik Kanaka <tharik.kanaka@gmail.com>
+Date:   Sun Jul 11 10:27:49 2021 +0530
+
+    Remove last name
+
+[33mcommit 17cb786c539ca47529e896a56fda327e6cea6378[m
+Author: Tharik Kanaka <tharik.kanaka@gmail.com>
+Date:   Sun Jul 11 10:26:41 2021 +0530
+
+    Remove space
+
+[33mcommit 4baab2e92221e39796fe5d093129d0d5f5b3c8c8[m
+Merge: 299b7b4 0a03731
+Author: rasinduramanayake <75307294+rasinduramanayake@users.noreply.github.com>
+Date:   Sun Jul 11 10:04:56 2021 +0530
+
+    Merge branch 'master' of https://github.com/rasindu98/icbt-22
+
+[33mcommit 299b7b44687d02c90adbd0986264cd7cd06cb138[m
+Author: rasinduramanayake <75307294+rasinduramanayake@users.noreply.github.com>
+Date:   Sun Jul 11 09:58:05 2021 +0530
+
+    Add comment for README.txt
+
+[33mcommit 0a0373113bc4471863d8c55b1137706c2530db46[m
+Author: Tharik Kanaka <tharik.kanaka@gmail.com>
+Date:   Sun Jul 11 09:56:14 2021 +0530
+
+    Change the header
+
+[33mcommit dec343a2447d4d7d8b92fb87b0a08b46c5af7970[m
+Merge: e4ebb8a e35a2c7
+Author: Tharik Kanaka <tharik.kanaka@gmail.com>
+Date:   Sun Jul 11 09:13:43 2021 +0530
+
+    Merge pull request #23 from gothamibv456/master
+    
+    Include read me
+
+[33mcommit e4ebb8a08246267b1cfce8fe1fc3356c5577f738[m
+Merge: a79c5e9 67c50c0
+Author: Tharik Kanaka <tharik.kanaka@gmail.com>
+Date:   Sun Jul 11 09:13:10 2021 +0530
+
+    Merge pull request #9 from MohomedRashad/master
+    
+    Added my name to the readme file
+
+[33mcommit a79c5e99670d0f7c7dae4f996cef228051b3a4b9[m
+Merge: 18e01c1 2ff87e3
+Author: Tharik Kanaka <tharik.kanaka@gmail.com>
+Date:   Sun Jul 11 09:09:12 2021 +0530
+
+    Merge pull request #21 from Kethees18/master
+    
+    Include my name
+
+[33mcommit 18e01c1bf84a71d20d9b5dd321e31a7661e74bfc[m
+Merge: 0d7789e 7d0a635
+Author: Tharik Kanaka <tharik.kanaka@gmail.com>
+Date:   Sun Jul 11 09:08:08 2021 +0530
+
+    Merge pull request #19 from wiahwajith/master
+    
+    submit commit
+
+[33mcommit 0d7789efaaed000357f1dbe2991770cb96b000bc[m
+Merge: 95c348c da2f49d
+Author: Tharik Kanaka <tharik.kanaka@gmail.com>
+Date:   Sun Jul 11 09:07:44 2021 +0530
+
+    Merge pull request #20 from jithma95/master
+    
+    Jithma Gamage
+
+[33mcommit f19868c5d7826655b3d8c75dd1ac6565065cd58c[m
+Author: arjuna-dave1218 <arjunadeve@gmail.com>
+Date:   Sun Jul 11 00:58:38 2021 +0530
+
+    Include my name Arjuna
+
+[33mcommit 42021c04c782bbf5851d30a5dfae3ea069ebce14[m
+Author: Kavindu Weerasinghe <kchamara421@gmail.com>
+Date:   Fri Jul 9 17:20:55 2021 +0530
+
+    Include readme file
+
+[33mcommit e35a2c731ca501d5b11046361ac13116ede59ef2[m
+Author: Sam <samadhisndnk@gmail.com>
+Date:   Thu Jul 8 14:33:54 2021 +0700
+
+    Include read me
+
+[33mcommit bb97675dbe6cb0fdf3832512b9387401093e8c61[m
+Author: Nusra9909 <86902904+Nusra9909@users.noreply.github.com>
+Date:   Tue Jul 6 13:08:04 2021 +0530
+
+    Include my first commit
+
+[33mcommit 42f4f31bdfafa78944b080480295b66376e2113d[m
+Author: unknown <you@example.com>
+Date:   Sun Jul 4 19:40:00 2021 +0530
+
+    Include read me
+
+[33mcommit 2ff87e38b5bfb27f1c3825d1b118d908800f5446[m
+Author: Kethees18 <muthaiah98765@gmail.com>
+Date:   Sun Jul 4 17:16:23 2021 +0530
+
+    Include my name
+
+[33mcommit e2e90f2a661749d43657d3329291026672185a27[m
+Author: Mohomed Ziyath <mohomed.ziyath1@gmail.com>
+Date:   Sun Jul 4 14:58:22 2021 +0530
+
+    included README file
+
+[33mcommit da2f49d233b044818d13838a1c7c5e5b731c8b95[m
+Author: unknown <jithmagamage99@gmail.com>
+Date:   Sun Jul 4 12:52:31 2021 +0530
+
+    Add Name
+
+[33mcommit 7d0a635d55432339dd619782e3bc8908d30840b9[m
+Author: wiahwajith <wishwajith1996@gmail.com>
+Date:   Sun Jul 4 12:15:32 2021 +0530
+
+    submit commit
+
+[33mcommit 9f8e2d12e58c417de958313bfd0a4898d7b6eb4b[m
+Author: Kavidu Aloka Kodikara <kavidualoka@Kavidu-Alokas-MacBook-Pro.local>
+Date:   Sun Jul 4 12:01:57 2021 +0530
+
+    init commit
+
+[33mcommit 67c50c0ae5ea632d80eab7a6ce3a4a26334feea1[m
+Merge: f35ec64 95c348c
+Author: Rashad <61945632+MohomedRashad@users.noreply.github.com>
+Date:   Sat Jul 3 23:30:52 2021 -0700
+
+    Merge branch 'keizer619:master' into master
+
+[33mcommit 95c348c5820c23460cd3d703812d7f74833a92fb[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Merge: f6f5ffb 796ef67
+Author: Tharik Kanaka <tharik.kanaka@gmail.com>
+Date:   Sun Jul 4 11:58:05 2021 +0530
+
+    Merge pull request #11 from aryanserasinghe/master
+    
+    Aryan
+
+[33mcommit f35ec648140b5f8a4cdd47dc31e16505a396d696[m
+Author: Mohomed Rashad <mohomedrashad.2000@gmail.com>
+Date:   Sun Jul 4 11:57:37 2021 +0530
+
+    Added my name is a new readme file inside a new folder
+
+[33mcommit 8d26c8e1a3b19f04207479c5f6d93472f90c2c00[m
+Author: Kavidu Aloka Kodikara <kavidualoka@Kavidu-Alokas-MacBook-Pro.local>
+Date:   Sun Jul 4 11:56:54 2021 +0530
+
+    init commit
+
+[33mcommit f6f5ffbf5f7340817aa98f534508d05ee729a55c[m
+Merge: 2635272 5af3061
+Author: Tharik Kanaka <tharik.kanaka@gmail.com>
+Date:   Sun Jul 4 11:52:21 2021 +0530
+
+    Merge pull request #15 from abshalomJudah99/patch-1
+    
+    Create 44
+
+[33mcommit 5af3061a05cc3ae19d82dcdee4300b1527fee5a7[m
+Author: abshalomJudah99 <86903475+abshalomJudah99@users.noreply.github.com>
+Date:   Sun Jul 4 11:51:16 2021 +0530
+
+    Create 44
+
+[33mcommit 263527243ee2cde9a6e97d704f868be1467bb58c[m
+Merge: f860ca1 ad6d03a
+Author: Tharik Kanaka <tharik.kanaka@gmail.com>
+Date:   Sun Jul 4 11:50:46 2021 +0530
+
+    Merge pull request #10 from rasindu98/master
+    
+    CL-BSCSD-22-16
+
+[33mcommit 4c4d926cdf6c69e233282653ffee608f82ea3b88[m
+Author: ijazsajjad2 <ijazsajjad@gmail.com>
+Date:   Sun Jul 4 11:48:47 2021 +0530
+
+    1
+
+[33mcommit 8ccf525cf3bebf554e631ef87549594766553961[m
+Author: pradeep <pradeep@intervest.lk>
+Date:   Sun Jul 4 11:48:37 2021 +0530
+
+    Revert "AmilaOS -Name add"
+    
+    This reverts commit 924b942a
+
+[33mcommit f860ca1bfe238c5e57499b600d576caea291f90e[m
+Merge: 421325d 3d36b3c
+Author: Tharik Kanaka <tharik.kanaka@gmail.com>
+Date:   Sun Jul 4 11:48:28 2021 +0530
+
+    Merge pull request #8 from NipunSangeeth/master
+    
+    new nipun's commit
+
+[33mcommit 421325d604a4b9016852e8f1b0b7d2f48dea9783[m
+Merge: 5494827 b1412d4
+Author: Tharik Kanaka <tharik.kanaka@gmail.com>
+Date:   Sun Jul 4 11:48:17 2021 +0530
+
+    Merge pull request #7 from sasinduSilva/master
+    
+    readme commit from Sasindu
+
+[33mcommit 5494827b4ff3ae281e7aa097c0a47c277ec5af7a[m
+Merge: 0c82585 05ef575
+Author: Tharik Kanaka <tharik.kanaka@gmail.com>
+Date:   Sun Jul 4 11:48:03 2021 +0530
+
+    Merge pull request #6 from ijazsajjad2/master
+    
+    test
+
+[33mcommit 0c82585761315da76138b48ab3e87f9d1a4a85af[m
+Merge: 637c329 9ac9478
+Author: Tharik Kanaka <tharik.kanaka@gmail.com>
+Date:   Sun Jul 4 11:47:50 2021 +0530
+
+    Merge pull request #5 from sameera98/master
+    
+    sameera
+
+[33mcommit 637c329cdcc844f3d53bb7b5e34eed2889343389[m
+Merge: 4544ee7 d0e5291
+Author: Tharik Kanaka <tharik.kanaka@gmail.com>
+Date:   Sun Jul 4 11:47:33 2021 +0530
+
+    Merge pull request #4 from sahanrox/master
+    
+    Create readme file
+
+[33mcommit 4544ee7e218c5341087d5884763432373ac8d665[m
+Merge: e26aefb 6100c1c
+Author: Tharik Kanaka <tharik.kanaka@gmail.com>
+Date:   Sun Jul 4 11:47:22 2021 +0530
+
+    Merge pull request #3 from chanakas1995/master
+    
+    CL/BSCSD/22/03
+
+[33mcommit e26aefbf8d8894d58971dacfa37bd3d62b843e40[m
+Merge: 6c1b065 2a5f07a
+Author: Tharik Kanaka <tharik.kanaka@gmail.com>
+Date:   Sun Jul 4 11:47:05 2021 +0530
+
+    Merge pull request #1 from Janindu077/master
+    
+    Update README.md
+
+[33mcommit 2a5f07af70344b3135b0238216fc98480280d03f[m
+Author: Janindu077 <janindurox077@gmail.com>
+Date:   Sun Jul 4 11:46:53 2021 +0530
+
+    Update README.md
+    
+    remove line
+
+[33mcommit 9ac947857c7371e5673144b778d781c788253be6[m
+Author: sameera gajanayaka <sameeragajanayaka@gmail.com>
+Date:   Sun Jul 4 11:46:48 2021 +0530
+
+    Update README.md
+
+[33mcommit 9d57bcd7c489616ce05ea25654aff5d9562ebaa9[m
+Author: Janindu077 <janindurox077@gmail.com>
+Date:   Sun Jul 4 11:45:20 2021 +0530
+
+    Update README.md
+    
+    remove line
+
+[33mcommit 4bbf62f7ab8f64f3defb57a857f7d7d5e73618db[m
+Author: Mohomed Rashad <mohomedrashad.2000@gmail.com>
+Date:   Sun Jul 4 11:44:25 2021 +0530
+
+    Added my name to the readme file
+
+[33mcommit 796ef67eb66d1550bd89d671a0c9f8c50d09555e[m
+Merge: 96ee4f8 6149297
+Author: Aryan <73768016+aryanserasinghe@users.noreply.github.com>
+Date:   Sun Jul 4 11:44:21 2021 +0530
+
+    Merge pull request #1 from aryanserasinghe652/master
+    
+    Create README.md
+
+[33mcommit 6c1b065cdf69466b883d6f2401eef5404c291235[m
+Merge: 96ee4f8 d04f0db
+Author: Tharik Kanaka <tharik.kanaka@gmail.com>
+Date:   Sun Jul 4 11:44:16 2021 +0530
+
+    Merge pull request #2 from vgnprasanna/master
+    
+    Create README file
+
+[33mcommit c2bbd1c59f19fbad15b765aabfb3f159c67d88e4[m
+Author: Janindu077 <janindurox077@gmail.com>
+Date:   Sun Jul 4 11:43:30 2021 +0530
+
+    Update README.md
+    
+    remove test
+
+[33mcommit ad6d03a6509b5ae9f789ccd738ce8651f0c2bb34[m
+Author: rasinduramanayake <75307294+rasinduramanayake@users.noreply.github.com>
+Date:   Sun Jul 4 11:36:33 2021 +0530
+
+    CL-BSCSD-22-16
+
+[33mcommit e2aaa2fd11e426f649abcacb070040dd1eb4a489[m
+Author: ibrahim <ihakam355@gmail.com>
+Date:   Sun Jul 4 11:34:20 2021 +0530
+
+    hi iam ibrahim
+
+[33mcommit 6100c1c2c852f09ed438603932924a3e67b12600[m
+Author: Chanaka Sandaruwan <49502187+chanakas1995@users.noreply.github.com>
+Date:   Sun Jul 4 11:33:17 2021 +0530
+
+    Included my name
+
+[33mcommit 28278ea9c45014a5e6c90c1041071e9cff6f3731[m
+Author: Chanaka Sandaruwan <49502187+chanakas1995@users.noreply.github.com>
+Date:   Sun Jul 4 11:32:52 2021 +0530
+
+    Created README.md
+
+[33mcommit 05ef5751887ba65e9ff41c1a40d1ea8b2e521573[m
+Author: ijazsajjad2 <ijazsajjad@gmail.com>
+Date:   Sun Jul 4 11:30:32 2021 +0530
+
+    test
+
+[33mcommit 0270370da3128b2e0f6ba98316db3795cd3204a5[m
+Author: banushan kaneshan <banushan8@gmail.com>
+Date:   Sun Jul 4 11:28:36 2021 +0530
+
+    include read me
+
+[33mcommit d04f0db181c07c35da21ec33f788d5e0e4b43e21[m
+Author: Nalinda Prasanna <prasannanalinda8@gmail.com>
+Date:   Sun Jul 4 11:28:26 2021 +0530
+
+    rename folder name
+
+[33mcommit 246c0826c535f356e4efde0a55504e79de11ca9e[m
+Author: pradeep <pradeep@intervest.lk>
+Date:   Sun Jul 4 11:22:24 
