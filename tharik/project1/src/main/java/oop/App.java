@@ -16,8 +16,18 @@ public class App {
         
                
         util.getStudents();
+        
+        
+        
         util.addStudent(new Student());
+        
+        
+        
         util.updateStudent(new Student());
+        
+        
+        
+        
         util.deleteStudent("ST001");
         
         

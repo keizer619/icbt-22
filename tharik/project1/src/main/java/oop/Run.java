@@ -5,6 +5,7 @@
  */
 package oop;
 
+import java.util.List;
 import java.util.ArrayList;
 
 /**
@@ -24,13 +25,10 @@ public class Run {
         students[0] = new Student();
         Student st =  students[0];
         
-        ArrayList<Student> students2 = new ArrayList<>();
+        List<Student> students2 = new ArrayList<>();
+        
         students2.add(new Student());
         Student st2 = students2.get(0);
-        
-        
-        
-      
     }   
     
     
