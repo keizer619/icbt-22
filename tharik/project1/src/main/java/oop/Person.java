@@ -9,7 +9,7 @@ package oop;
  *
  * @author tharik
  */
-public class Person {
+public abstract class Person {
     
     private String nic;
     private String name;
