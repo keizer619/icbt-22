@@ -5,12 +5,36 @@
  */
 package oop;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author tharik
  */
 public class Run {
     public static void main(String[] args) {   
+
+        
+        DBUtil util = new MongoDBUtil();
+        App.processStudentInfo(util);
+        
+        
+        
+        Student [] students  = new Student[10];
+        students[0] = new Student();
+        Student st =  students[0];
+        
+        ArrayList<Student> students2 = new ArrayList<>();
+        students2.add(new Student());
+        Student st2 = students2.get(0);
+        
+        
+        
+      
+    }   
+    
+    
+    public void samples01() {
         Person p1 = new Person();
         p1 = new Student("123V", "John", "ST00008");
         //Student st3 = new Person("123V", "John"); -> Impossbile
@@ -24,5 +48,5 @@ public class Run {
         for (Person p : persons) {
             System.out.println(p.getName());
         }
-    }   
+    }
 }
