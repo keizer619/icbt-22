@@ -1,3 +1,3 @@
 ###Welcome to Github###
 
-Thilakshi Madhushika Morawaka
+Thilakshi Madhushika Perera Morawaka
