@@ -9,9 +9,7 @@ package oop;
  *
  * @author ASUS
  */
-public class Run {
+public class Student {
     
-     public static void main(String[] args) {
-          
-     }
+    String StudentId;
 }

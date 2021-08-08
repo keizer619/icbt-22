@@ -3,15 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package oop;
+package oop2;
 
 /**
  *
  * @author ASUS
  */
-public class Run {
+public interface DBUtil {
     
-     public static void main(String[] args) {
-          
-     }
 }
