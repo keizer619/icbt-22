@@ -13,17 +13,25 @@ public class Person {
     
     private String nic;
     private String name;
+    private String gender;
+    private String mobileNo;
+    private String dob;
+
+    public Person(String nic, String name, String gender, String mobileNo, String dob) {
+        this.nic = nic;
+        this.name = name;
+        this.gender = gender;
+        this.mobileNo = mobileNo;
+        this.dob = dob;
+    }
     
     public Person() {
         this.nic = "";
         this.name = "";
+        this.gender = "";
+        this.mobileNo = "";
+        this.dob = "";
     }
-    
-    public Person(String nic, String name) {
-        this.nic = nic;
-        this.name = name;
-    }
-    
 
     public String getNic() {
         return nic;
@@ -40,9 +48,31 @@ public class Person {
     public void setName(String name) {
         this.name = name;
     }
-    
-    
-    public void test() {
-        System.out.println("test");
+
+    public String getGender() {
+        return gender;
     }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+
+    public String getMobileNo() {
+        return mobileNo;
+    }
+
+    public void setMobileNo(String mobileNo) {
+        this.mobileNo = mobileNo;
+    }
+
+    public String getDob() {
+        return dob;
+    }
+
+    public void setDob(String dob) {
+        this.dob = dob;
+    }
+    
+    
+   
 }
