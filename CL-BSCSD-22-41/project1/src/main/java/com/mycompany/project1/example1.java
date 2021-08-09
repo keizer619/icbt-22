@@ -7,12 +7,17 @@ package com.mycompany.project1;
 
 /**
  *
- * @author ASUS
+ * @author zeena
  */
-public class Run {
-    
-     public static void main(String[] args) {
-          for(int i=0;i<5;i++)	  
-             System.out.println("***** ");
+public class example1 
+{
+    public static void main (String [] args)
+    {
+        for (int i = 0; i<4;i++)
+        {
+            
+                System.out.println("* * * *");
+            
+        }
     }
 }

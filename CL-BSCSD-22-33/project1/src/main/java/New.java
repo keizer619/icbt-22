@@ -3,16 +3,11 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.mycompany.project1;
 
 /**
  *
- * @author ASUS
+ * @author Ijaz
  */
-public class Run {
+public class New {
     
-     public static void main(String[] args) {
-          for(int i=0;i<5;i++)	  
-             System.out.println("***** ");
-    }
 }

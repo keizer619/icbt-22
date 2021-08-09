@@ -3,16 +3,17 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.mycompany.project1;
+package com.mycompany.mavenproject1;
 
 /**
  *
- * @author ASUS
+ * @author Rasindu Ramanayake
  */
-public class Run {
-    
-     public static void main(String[] args) {
+public class square {
+    public static void main(String[] args)
+    {  
           for(int i=0;i<5;i++)	  
-             System.out.println("***** ");
+          System.out.println("***** ");
     }
+    
 }
