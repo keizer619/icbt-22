@@ -34,6 +34,16 @@
 
     </head>
     <body>
+        
+        <%
+          String username = request.getParameter("username");
+          String password = request.getParameter("password");
+          
+          if (!Utils.authenticate(username, password)) {
+              response.sendRedirect("login.jsp");
+          } %>
+        
+        <h1>Welcome <% out.print(username);%>  
         <h1>Approach 01</h1>
         <%               
                out.print(Utils.getPersonsHTML());  
