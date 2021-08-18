@@ -47,4 +47,10 @@ public class Utils {
         output += "</table>";
         return output;
     }
+    
+    public static boolean authenticate(String username, String password) {
+        //Should authenticate from a DB
+        return username != null && password != null &
+                username.equals("john") && password.equals("123");
+    }
 }
