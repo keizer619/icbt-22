@@ -5,6 +5,7 @@
 --%>
 <%@page import="oop.Utils"%>
 <%@page import="java.util.List"%>
+<%@page import="java.util.UUID"%>
 <%@page import="oop.Person"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -18,6 +19,34 @@
         <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.js"></script>
     </head>
     <body>
+               
+        <%
+          String username = request.getParameter("username");
+          String password = request.getParameter("password");
+          
+          if (!Utils.authenticate(username, password)) {
+              String name = null;
+              for (Cookie cookie : request.getCookies()) {
+                  if (cookie.getName().equals("sesid")) {
+                      name = session.getAttribute(cookie.getValue()).toString();
+                  }
+              }
+              
+              if (name == null) {
+                  response.sendRedirect("login.jsp");
+              } else {
+                  username = name;
+              }
+              
+              
+          } else {
+             String sesid = UUID.randomUUID().toString().replace("-", "").toUpperCase();
+             session.setAttribute(sesid, username);
+             
+             Cookie cookie = new Cookie("sesid", sesid);
+             response.addCookie(cookie);   
+          }
+        %>
         <table id='tblPersons'>
             <thead>
                 <tr>

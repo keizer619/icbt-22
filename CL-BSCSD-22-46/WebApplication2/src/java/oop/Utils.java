@@ -42,5 +42,10 @@ public class Utils {
         return output;
     }
     
+        public static boolean authenticate(String username, String password) {
+        
+        return username != null && password != null &
+                username.equals("john") && password.equals("123");
+    }
     
 }
