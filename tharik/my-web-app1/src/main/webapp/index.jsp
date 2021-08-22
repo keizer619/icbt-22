@@ -36,7 +36,9 @@
 
     </head>
     <body>
-        
+        <form action="handle-logout.jsp" method="post">
+          <input type="submit" value="Logout">
+        </form> 
         <%
             UserSession userSession = Utils.handleUserSession(request, response, session);
             if (userSession == null) {
