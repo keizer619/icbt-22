@@ -44,6 +44,7 @@
     </head>
     <body>
         <h1>Login</h1>
+        <form action="LoginCheck.jsp" method="post">
          <form>  
         <div class="container">   
             <label>Username : </label>   
@@ -63,5 +64,6 @@
               
         </div>   
     </form>
+        
     </body>
 </html>
