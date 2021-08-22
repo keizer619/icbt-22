@@ -4,6 +4,7 @@
     Author     : tharik
 --%>
 
+<%@page import="oop.UserSession"%>
 <%@page import="java.util.UUID"%>
 <%@page import="oop.Utils"%>
 <%@page import="java.util.List"%>
@@ -37,34 +38,15 @@
     <body>
         
         <%
-          String username = request.getParameter("username");
-          String password = request.getParameter("password");
-          
-          if (!Utils.authenticate(username, password)) {
-              String name = null;
-              for (Cookie cookie : request.getCookies()) {
-                  if (cookie.getName().equals("sesid")) {
-                      name = session.getAttribute(cookie.getValue()).toString();
-                  }
-              }
-              
-              if (name == null) {
-                  response.sendRedirect("login.jsp");
-              } else {
-                  username = name;
-              }
-              
-              
-          } else {
-             String sesid = UUID.randomUUID().toString().replace("-", "").toUpperCase();
-             session.setAttribute(sesid, username);
-             
-             Cookie cookie = new Cookie("sesid", sesid);
-             response.addCookie(cookie);   
-          }
+            UserSession userSession = Utils.handleUserSession(request, response, session);
+            if (userSession == null) {
+                response.sendRedirect("login.jsp");
+            } else {
         %>
         
-        <h1>Welcome <% out.print(username);%>  
+      
+        
+        <h1>Welcome <%out.print(userSession.getUsername());%>  
         <h1>Approach 01</h1>
         <%               
                out.print(Utils.getPersonsHTML());  
@@ -101,6 +83,6 @@
                     $('#tblPersons').DataTable();
                 } );
             </script>
-        
+        <%}%>
     </body>
 </html>
