@@ -5,8 +5,13 @@
  */
 package oop;
 
+import jakarta.servlet.http.Cookie;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.UUID;
 
 /**
  *
@@ -42,10 +47,40 @@ public class Utils {
         return output;
     }
     
-        public static boolean authenticate(String username, String password) {
-        
-        return username != null && password != null &
-                username.equals("john") && password.equals("123");
+    public static UserSession authenticate(String username, String password) {
+        UserSession userSession = null;
+        //Should authenticate from a DB
+        if( username != null && password != null &
+                username.equals("john") && password.equals("123")) {
+            userSession = new UserSession("john", "John", "Smith", "None");
+        }
+        return userSession;
     }
+    
+    
+    public static UserSession handleUserSession(HttpServletRequest request, HttpServletResponse response, HttpSession session) {
+          String username = request.getParameter("username");
+          String password = request.getParameter("password");
+          
+          UserSession userSession = Utils.authenticate(username, password);
+          
+          if (userSession == null) {
+              // If username and password is incorrect
+              for (Cookie cookie : request.getCookies()) {
+                  if (cookie.getName().equals("sesid")) {
+                      userSession = (UserSession) session.getAttribute(cookie.getValue());  
+                  }
+              }
+          } else {
+             //If username and password is correct
+             String sesid = UUID.randomUUID().toString().replace("-", "").toUpperCase();
+             session.setAttribute(sesid, userSession);
+             Cookie cookie = new Cookie("sesid", sesid);
+             response.addCookie(cookie);   
+          }
+          
+          return userSession;
+    }
+
     
 }
