@@ -15,9 +15,8 @@
     </head>
     <body>
         <%
-            String username = request.getParameter("username");
-            String password = request.getParameter("password");
-            if ((username != null) && (password != null) && (username.equals("admin")) && (password.equals("123"))) {
+
+            if (Utill.authenticate(request, response, session)) {
         %>
         <table border="1">
             <thead>
@@ -31,8 +30,7 @@
             </thead>
             <tbody>
                 <%
-                    Utill utill = new Utill();
-                    for (Person p : utill.getPersons()) {
+                    for (Person p : Utill.getPersons()) {
                 %>
                 <tr>
                     <td><%= p.getNic()%></td>
@@ -41,11 +39,21 @@
                     <td><%= p.getGender()%></td>
                     <td><%= p.getMobile()%></td>
                 </tr>
-                <% }%>
+                <%
+                    }
+                %>
             </tbody>
         </table>
-        <% } else {
+        <br>
+        <br>
+        <br>
+        <form action="logout.jsp" method="POST">
+            <input type="submit" value="Logout" />
+        </form>
+        <%
+            } else {
                 response.sendRedirect("login.jsp");
-            }%>
+            }
+        %>
     </body>
 </html>

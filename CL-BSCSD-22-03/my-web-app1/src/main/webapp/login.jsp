@@ -4,8 +4,14 @@
     Author     : Chanaka
 --%>
 
+<%@page import="oop.Utill"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
+<%
+    if (Utill.authenticate(request, response, session)) {
+        response.sendRedirect("./");
+    } else {
+%>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -21,3 +27,6 @@
         </form>
     </body>
 </html>
+<%
+    }
+%>
