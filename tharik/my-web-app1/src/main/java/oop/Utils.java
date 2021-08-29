@@ -5,8 +5,15 @@
  */
 package oop;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.UUID;
+import javax.servlet.http.Cookie;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+import javax.servlet.http.HttpSession
 
 /**
  *
@@ -46,5 +53,40 @@ public class Utils {
         }
         output += "</table>";
         return output;
+    }
+    
+    public static UserSession authenticate(String username, String password) {
+        UserSession userSession = null;
+        //Should authenticate from a DB
+        if( username != null && password != null &
+                username.equals("john") && password.equals("123")) {
+            userSession = new UserSession("john", "John", "Smith", "None");
+        }
+        return userSession;
+    }
+    
+    
+    public static UserSession handleUserSession(HttpServletRequest request, HttpServletResponse response, HttpSession session) {
+          String username = request.getParameter("username");
+          String password = request.getParameter("password");
+          
+          UserSession userSession = Utils.authenticate(username, password);
+          
+          if (userSession == null) {
+              // If username and password is incorrect
+              for (Cookie cookie : request.getCookies()) {
+                  if (cookie.getName().equals("sesid")) {
+                      userSession = (UserSession) session.getAttribute(cookie.getValue());  
+                  }
+              }
+          } else {
+             //If username and password is correct
+             String sesid = UUID.randomUUID().toString().replace("-", "").toUpperCase();
+             session.setAttribute(sesid, userSession);
+             Cookie cookie = new Cookie("sesid", sesid);
+             response.addCookie(cookie);   
+          }
+          
+          return userSession;
     }
 }

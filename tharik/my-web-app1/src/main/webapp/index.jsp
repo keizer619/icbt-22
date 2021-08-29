@@ -4,6 +4,8 @@
     Author     : tharik
 --%>
 
+<%@page import="oop.UserSession"%>
+<%@page import="java.util.UUID"%>
 <%@page import="oop.Utils"%>
 <%@page import="java.util.List"%>
 <%@page import="oop.Person"%>
@@ -34,6 +36,17 @@
 
     </head>
     <body>
+        
+        <%
+            UserSession userSession = Utils.handleUserSession(request, response, session);
+            if (userSession == null) {
+                response.sendRedirect("login.jsp");
+            } else {
+        %>
+        
+      
+        
+        <h1>Welcome <%out.print(userSession.getUsername());%>  
         <h1>Approach 01</h1>
         <%               
                out.print(Utils.getPersonsHTML());  
@@ -70,6 +83,6 @@
                     $('#tblPersons').DataTable();
                 } );
             </script>
-        
+        <%}%>
     </body>
 </html>
