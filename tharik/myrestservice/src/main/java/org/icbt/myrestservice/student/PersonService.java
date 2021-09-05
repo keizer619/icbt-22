@@ -14,6 +14,8 @@ public interface PersonService {
     public Response addPerson(Person p);
 
     public Response deletePerson(int id);
+    
+    public Response updatePerson(Person p);
 
     public Person getPerson(int id);
 
