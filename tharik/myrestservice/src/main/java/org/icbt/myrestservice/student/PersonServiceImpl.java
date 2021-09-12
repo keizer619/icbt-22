@@ -6,6 +6,7 @@
 package org.icbt.myrestservice.student;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import javax.ws.rs.Consumes;
@@ -26,17 +27,13 @@ import javax.ws.rs.core.MediaType;
 @Path("/person")
 @Consumes(MediaType.APPLICATION_XML)
 @Produces(MediaType.APPLICATION_XML)
-public class PersonServiceImpl implements PersonService {
-
-    private static Map<Integer,Person> persons = new HashMap<Integer,Person>();
-    
-    
+public class PersonServiceImpl implements PersonService {    
     @Override
     @POST
     public Response addPerson(Person p) {
         Response response = new Response();
         try {
-            persons.put(p.getId(), p);
+            DBUtils.addPerson(p);
             response.setMessage("Person is added");
             response.setStatus(true);
         } catch(Exception e) {
@@ -51,8 +48,7 @@ public class PersonServiceImpl implements PersonService {
     public Response updatePerson(Person p) {
         Response response = new Response();
         try {
-            persons.remove(p.getId());
-            persons.put(p.getId(), p);            
+            DBUtils.updatePerson(p);            
             response.setMessage("Person is updated");
             response.setStatus(true);
         } catch(Exception e) {
@@ -68,7 +64,7 @@ public class PersonServiceImpl implements PersonService {
     public Response deletePerson(@PathParam("id")int id) {
         Response response = new Response();
         try {
-            persons.remove(id);
+            DBUtils.deletePerson(id);
             response.setMessage("Person is deleted");
             response.setStatus(true);
         } catch(Exception e) {
@@ -82,18 +78,18 @@ public class PersonServiceImpl implements PersonService {
     @GET
     @Path("/{id}")
     public Person getPerson(@PathParam("id")int id) {
-        return persons.get(id);
+        return DBUtils.getPerson(id);
     }
 
     @Override
     @GET
-    public Person[] getAllPersons() {        
-        Set<Integer> ids = persons.keySet();
-        Person[] personsArray = new Person[ids.size()];
-        int i = 0;
-        for (Integer id : ids) {
-            personsArray[i] = persons.get(id);
-            i++;
+    public Person[] getAllPersons() {     
+        List<Person> persons = DBUtils.getPersons();
+        Person[] personsArray = new Person[persons.size()];
+        int index = 0;
+        for(Person p : persons) {
+            personsArray[index] = p;
+            index++;
         }
         return personsArray;
     }
