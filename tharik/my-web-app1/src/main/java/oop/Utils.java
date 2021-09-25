@@ -5,8 +5,14 @@
  */
 package oop;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.UUID;
+import javax.servlet.http.Cookie;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 /**
  *
@@ -48,9 +54,39 @@ public class Utils {
         return output;
     }
     
-    public static boolean authenticate(String username, String password) {
+    public static UserSession authenticate(String username, String password) {
+        UserSession userSession = null;
         //Should authenticate from a DB
-        return username != null && password != null &
-                username.equals("john") && password.equals("123");
+        if( username != null && password != null &
+                username.equals("john") && password.equals("123")) {
+            String sesid = UUID.randomUUID().toString().replace("-", "").toUpperCase();
+            userSession = new UserSession("john", "John", "Smith", "None", sesid);
+        }
+        return userSession;
+    }
+    
+    
+    public static UserSession handleUserSession(HttpServletRequest request, HttpServletResponse response, HttpSession session) {
+          String username = request.getParameter("username");
+          String password = request.getParameter("password");
+          
+          UserSession userSession = Utils.authenticate(username, password);
+          
+          if (userSession == null) {
+              // If username and password is incorrect
+              for (Cookie cookie : request.getCookies()) {
+                  if (cookie.getName().equals("sesid")) {
+                      userSession = (UserSession) session.getAttribute(cookie.getValue());  
+                  }
+              }
+          } else {
+             //If username and password is correct
+             
+             session.setAttribute(userSession.getId(), userSession);
+             Cookie cookie = new Cookie("sesid", userSession.getId());
+             response.addCookie(cookie);   
+          }
+          
+          return userSession;
     }
 }
