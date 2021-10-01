@@ -70,7 +70,6 @@ public class DBUtilsTest {
         
         //Delete the person
         result = DBUtils.deletePerson(person.getId());
-        
         resultPerson = DBUtils.getPerson(person.getId());
         assertEquals(null, resultPerson);
     }
