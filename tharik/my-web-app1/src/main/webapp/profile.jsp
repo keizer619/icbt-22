@@ -14,6 +14,19 @@
         <title>JSP Page</title>
     </head>
     <body>
+        <script>
+            function logout() {
+                
+                var test = "test";
+                
+                
+                window.location.href = "./handle-logout.jsp"
+            }
+        </script>
+        
+        <input type="button" onclick="logout()" value="logout"/>
+        
+        
         <%
             UserSession userSession = Utils.handleUserSession(request, response, session);
             if (userSession == null) {

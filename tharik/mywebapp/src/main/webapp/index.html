@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Start Page</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        ID : <input type='text' id='txtId'>
+        <button onclick="loadPerson()">Load Person</button> 
+        <button onclick="addPerson()">Add Person</button>
+        <button onclick="updatePerson()">Update Person</button>
+        <button onclick="deletePerson()">Delete Person</button>
+        <button onclick="clearPerson()">Clear</button>
+        <br/><br/>
+        Name : <input type='text' id='txtName'>
+        Age : <input type='text' id='txtAge'>
+        <script>
+            const url='http://localhost:8081/myrestservice/service/person-json/';
+            function loadPerson() {
+                var id= document.getElementById("txtId").value
+                const options = {
+                       method: "GET",
+                       headers: new Headers({'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*'}),
+                       mode: 'no-cors'
+                };
+
+                fetch(url + id, options)
+                .then(res => res.json())
+                .then(data => {
+                        document.getElementById('txtName').value = data.name;
+                        document.getElementById('txtAge').value = data.age;
+                    });  
+            }
+            
+            function addPerson() {
+                (async () => {
+                    const rawResponse = await fetch(url, {
+                      method: 'POST',
+                      headers: {
+                        'Accept': 'application/json',
+                        'Content-Type': 'application/json',
+                        'Access-Control-Allow-Origin': '*'
+                      },
+                      body: JSON.stringify({
+                                    "id": document.getElementById('txtId').value, 
+                                    "name": document.getElementById('txtName').value,
+                                    "age": document.getElementById('txtAge').value
+                                })
+                    });
+                    const content = await rawResponse.json();
+              })();
+            }
+            
+            function updatePerson() {
+                 (async () => {
+                    const rawResponse = await fetch(url, {
+                      method: 'PUT',
+                      headers: {
+                        'Accept': 'application/json',
+                        'Content-Type': 'application/json',
+                        'Access-Control-Allow-Origin': '*'
+                      },
+                      body: JSON.stringify({
+                                    "id": document.getElementById('txtId').value, 
+                                    "name": document.getElementById('txtName').value,
+                                    "age": document.getElementById('txtAge').value
+                                })
+                    });
+                    const content = await rawResponse.json();
+              })();  
+            }
+            
+            function deletePerson() {
+                (async () => {
+                    var id= document.getElementById("txtId").value
+                    const rawResponse = await fetch(url + id, {
+                      method: 'DELETE',
+                      headers: {
+                        'Accept': 'application/json',
+                        'Content-Type': 'application/json',
+                        'Access-Control-Allow-Origin': '*'
+                      }
+                    });
+                    const content = await rawResponse.json();
+              })(); 
+            }
+            
+            function clearPerson() {
+                document.getElementById('txtId').value = ""
+                document.getElementById('txtName').value = ""
+                document.getElementById('txtAge').value = ""
+            }
+        </script>
+    </body>
+</html>

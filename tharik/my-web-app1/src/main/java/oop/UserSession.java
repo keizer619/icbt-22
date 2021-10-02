@@ -14,15 +14,17 @@ public class UserSession {
     private String firstName;
     private String lastName;
     private String remarks;
+    private String id;
 
     public UserSession() {
     }
 
-    public UserSession(String username, String firstName, String lastName, String remarks) {
+    public UserSession(String username, String firstName, String lastName, String remarks, String id) {
         this.username = username;
         this.firstName = firstName;
         this.lastName = lastName;
         this.remarks = remarks;
+        this.id = id;
     }
 
     public String getUsername() {
@@ -56,6 +58,15 @@ public class UserSession {
     public void setRemarks(String remarks) {
         this.remarks = remarks;
     }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+    
     
     
 }

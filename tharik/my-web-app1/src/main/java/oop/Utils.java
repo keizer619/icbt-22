@@ -13,7 +13,6 @@ import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-import javax.servlet.http.HttpSession
 
 /**
  *
@@ -60,7 +59,8 @@ public class Utils {
         //Should authenticate from a DB
         if( username != null && password != null &
                 username.equals("john") && password.equals("123")) {
-            userSession = new UserSession("john", "John", "Smith", "None");
+            String sesid = UUID.randomUUID().toString().replace("-", "").toUpperCase();
+            userSession = new UserSession("john", "John", "Smith", "None", sesid);
         }
         return userSession;
     }
@@ -81,9 +81,9 @@ public class Utils {
               }
           } else {
              //If username and password is correct
-             String sesid = UUID.randomUUID().toString().replace("-", "").toUpperCase();
-             session.setAttribute(sesid, userSession);
-             Cookie cookie = new Cookie("sesid", sesid);
+             
+             session.setAttribute(userSession.getId(), userSession);
+             Cookie cookie = new Cookie("sesid", userSession.getId());
              response.addCookie(cookie);   
           }
           
