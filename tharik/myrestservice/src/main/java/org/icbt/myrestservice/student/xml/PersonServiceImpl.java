@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package org.icbt.myrestservice.student;
+package org.icbt.myrestservice.student.xml;
 
 import java.util.HashMap;
 import java.util.List;
@@ -18,13 +18,15 @@ import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
+import org.icbt.myrestservice.student.DBUtils;
+import org.icbt.myrestservice.student.Person;
 
 
 /**
  *
  * @author tharik
  */
-@Path("/person")
+@Path("/person-xml")
 @Consumes(MediaType.APPLICATION_XML)
 @Produces(MediaType.APPLICATION_XML)
 public class PersonServiceImpl implements PersonService {    

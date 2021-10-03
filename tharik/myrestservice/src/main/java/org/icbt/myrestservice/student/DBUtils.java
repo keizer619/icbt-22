@@ -72,9 +72,8 @@ public class DBUtils {
       }
       return false;
    }
-   
-   
-   public static Person getPerson(int id) { 
+    
+    public static Person getPerson(int id) { 
       Person person = null;
       try {
          Class.forName("com.mysql.cj.jdbc.Driver");
@@ -95,7 +94,7 @@ public class DBUtils {
       return person;
    }
    
-   public static List<Person> getPersons() { 
+    public static List<Person> getPersons() { 
       List<Person> persons = new ArrayList<>();
       try {
          Class.forName("com.mysql.cj.jdbc.Driver");

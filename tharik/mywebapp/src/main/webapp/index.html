@@ -15,9 +15,9 @@
         Name : <input type='text' id='txtName'>
         Age : <input type='text' id='txtAge'>
         <script>
-            const url='http://localhost:8081/myrestservice/service/person-json/';
+            const url='http://localhost:8081/myrestservice/service/person/';
             function loadPerson() {
-                var id= document.getElementById("txtId").value
+                var id = document.getElementById("txtId").value
                 const options = {
                        method: "GET",
                        headers: new Headers({'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*'}),
@@ -34,38 +34,47 @@
             
             function addPerson() {
                 (async () => {
-                    const rawResponse = await fetch(url, {
+                    const person = {
+                                    "id": document.getElementById('txtId').value, 
+                                    "name": document.getElementById('txtName').value,
+                                    "age": document.getElementById('txtAge').value
+                                    };
+                    
+                    const options = {
                       method: 'POST',
+                      mode: 'no-cors',
                       headers: {
                         'Accept': 'application/json',
                         'Content-Type': 'application/json',
                         'Access-Control-Allow-Origin': '*'
                       },
-                      body: JSON.stringify({
-                                    "id": document.getElementById('txtId').value, 
-                                    "name": document.getElementById('txtName').value,
-                                    "age": document.getElementById('txtAge').value
-                                })
-                    });
+                      body: JSON.stringify(person)
+                    };
+                    
+                    const rawResponse = await fetch(url, options);
                     const content = await rawResponse.json();
               })();
             }
             
             function updatePerson() {
                  (async () => {
-                    const rawResponse = await fetch(url, {
+                    const person = {
+                                    "id": document.getElementById('txtId').value, 
+                                    "name": document.getElementById('txtName').value,
+                                    "age": document.getElementById('txtAge').value
+                                    };
+                                    
+                    const options = {
                       method: 'PUT',
                       headers: {
                         'Accept': 'application/json',
                         'Content-Type': 'application/json',
                         'Access-Control-Allow-Origin': '*'
                       },
-                      body: JSON.stringify({
-                                    "id": document.getElementById('txtId').value, 
-                                    "name": document.getElementById('txtName').value,
-                                    "age": document.getElementById('txtAge').value
-                                })
-                    });
+                      body: JSON.stringify(person)
+                    };
+                     
+                    const rawResponse = await fetch(url, options);
                     const content = await rawResponse.json();
               })();  
             }
