@@ -19,14 +19,21 @@ public class UserService {
     
     @GET
     public String getUserCredentials() {
+        
         System.out.println("------->OK");
         String admin="admin";
+        
         UserDBQueries.getUser(admin);
         User user=new User();
         System.out.print("userName"+user.getUsername());
         System.out.print("Password"+user.getPassword());
-        
+        try{
         return null;
+        }
+        catch (Exception e)
+        {
+           throw e;
+        }
+
     }
-    
 }
