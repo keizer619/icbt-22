@@ -14,6 +14,10 @@
         <title>JSP Page</title>
     </head>
     <body>
+        <%
+
+            if (Utill.authenticate(request, response, session)) {
+        %>
         <table border="1">
             <thead>
                 <tr>
@@ -26,18 +30,30 @@
             </thead>
             <tbody>
                 <%
-                    Utill utill = new Utill();
-                    for (Person p : utill.getPersons()) {
+                    for (Person p : Utill.getPersons()) {
                 %>
                 <tr>
                     <td><%= p.getNic()%></td>
-                    <td><%= p.getName() %></td>
+                    <td><%= p.getName()%></td>
                     <td><%= p.getDateOfBirth()%></td>
                     <td><%= p.getGender()%></td>
                     <td><%= p.getMobile()%></td>
                 </tr>
-                <% } %>
+                <%
+                    }
+                %>
             </tbody>
         </table>
+        <br>
+        <br>
+        <br>
+        <form action="logout.jsp" method="POST">
+            <input type="submit" value="Logout" />
+        </form>
+        <%
+            } else {
+                response.sendRedirect("login.jsp");
+            }
+        %>
     </body>
 </html>
